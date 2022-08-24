@@ -1,8 +1,78 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html,
 body {
+  height: 100%;
   font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  background-image: url(https://s3.amazonaws.com/makeitreal/cars/jaguar-xe.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.container__content-box {
+  max-width: 600px;
+  max-height: 400px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 55px 40px;
+  padding: 35px 30px 25px 30px;
+  border-radius: 20px;
+  line-height: 1.6;
+  transition: all .25s linear; 
+  -o-transition: all .25s linear; 
+  -moz-transition: all .25s linear; 
+  -webkit-transition: all .25s linear; 
+ 
+}
+
+.container__content-box > h1 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.container__content-box > p {
+  font-weight: 400;
+}
+
+.container__content-button > button {
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #DB3030;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container__content-button > button > a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 690px) {
+  .container {
+    
+  }
+  .container__content-box {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 55px 40px;
+    padding: 35px 30px 25px 30px;
+    border-radius: 20px;
+    line-height: 1.6;
+    position: absolute;
+    top: 50px;
+    left: 45px;
+  }
+
 }
